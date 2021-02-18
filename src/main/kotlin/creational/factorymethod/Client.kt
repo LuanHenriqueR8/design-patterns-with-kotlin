@@ -7,8 +7,15 @@ import creational.factorymethod.factory.IphoneXSMaxFactory
 
 fun main() {
 
-    Iphone11ProFactory().orderIphone()
-    Iphone11Factory().orderIphone()
-    IphoneXFactory().orderIphone()
-    IphoneXSMaxFactory().orderIphone()
+    val iphone11Pro = Iphone11ProFactory().orderIphone()
+    iphone11Pro.getHardware()
+
+    val iphone11 = Iphone11Factory().orderIphone()
+    iphone11.getHardware()
+
+    val iphoneX = IphoneXFactory().orderIphone()
+    iphoneX.getHardware()
+
+    val iphoneXSMax = IphoneXSMaxFactory().orderIphone()
+    iphoneXSMax.getHardware()
 }

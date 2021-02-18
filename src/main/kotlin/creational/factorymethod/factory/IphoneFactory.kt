@@ -11,7 +11,6 @@ abstract class IphoneFactory {
         device.assemble()
         device.certificates()
         device.pack()
-        device.getHardware()
         return device
     }
 
